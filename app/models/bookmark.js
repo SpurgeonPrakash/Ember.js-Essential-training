@@ -3,9 +3,13 @@ import Model from 'ember-data/model';
 // import { belongsTo, hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
-	link: attr(),
-	title: attr(),
-	about: attr(),
-	public: attr(),
-	created: attr()
+	link: attr('string'),
+	title: attr('string'),
+	about: attr('string'),
+	public: attr('boolean'),
+	created: attr('date',{
+		defaultValue(){
+			return new Date();
+		}
+	})
 });
