@@ -21,6 +21,10 @@ Router.map(function() {
   this.route('page-not-found', {
     path: '/*wilcard'
   });
+
+  this.route('users', function() {
+    this.route('list-active');
+  });
 });
 
 export default Router;
