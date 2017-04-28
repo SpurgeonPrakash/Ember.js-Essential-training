@@ -1,5 +1,10 @@
 import DS from 'ember-data';
- import attr from 'ember-data/attr';
+import attr from 'ember-data/attr';
+import { belongTo, hasMany } from 'ember-data/relationships';
+
+
+
+
 export default DS.Model.extend({
   username: DS.attr('string'),
   email: DS.attr('string'),
@@ -14,5 +19,6 @@ export default DS.Model.extend({
   	defaultValue(){
   		return new Date();
   	}
-  })
+  }),
+  bookmarks: hasMany('bookmark')
 });
