@@ -3,7 +3,7 @@
 # compiled output
 /dist
 /tmp
-
+/Exercise Files
 # dependencies
 /node_modules
 /bower_components

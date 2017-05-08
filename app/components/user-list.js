@@ -1,7 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	imgClass: "avatar"
+	imgClass: "avatar",
+	click() {
+		Ember.Logger.info("users-list was clicked")
+	}
 });
 // const UsersListComponent =  Ember.Component.extend({
 // 	imgClass: "avatar"
