@@ -18,7 +18,7 @@ module.exports = function(environment) {
     },
 
     APP: {
-      title: 'Bookmarks - это здесь'
+      title: 'Bookmarks - это здесь http://accurate-screw.surge.sh/'
       // Here you can pass flags/options to your application instance
       // when it is created
     }
