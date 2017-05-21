@@ -12,6 +12,6 @@ test('visiting /bookmark-delete', function(assert) {
   visit(`/emberbook/edit/${bookmark.id}`);
   click('button#delete');
   andThen(function(){
-  	assert.equal(currentURL(), '/bookmarks')
+  	assert.equal(currentURL(), '/emberbooks')
   })
 });
