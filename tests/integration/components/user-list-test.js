@@ -10,16 +10,16 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
-  this.render(hbs`{{user-list}}`);
+  this.render(hbs`{{user-list fake-url sample-email}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$('img').attr('class'), 'avatar');
 
   // Template block usage:
   this.render(hbs`
-    {{#user-list}}
+    {{#user-list fake-url sample-emai}}
       template block text
     {{/user-list}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('img').attr('class'), 'avatar);
 });
